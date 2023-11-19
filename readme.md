@@ -4,6 +4,7 @@
 2. then reduce the file size to under 5MB so that it will fit into our document management system on Exacom (compress PDF). 
 3. plus OCR the PDF so that we can copy the text from the document into our system (legal clause text).
 
+## steps
 
 0. to install these packages, first install [scoop](https://scoop.sh/)
 1. Split ([pdftk](https://scoop.sh/#/apps?q=pdftk&id=1baf4b75f78a347f787b20f45816e894392675bc))
