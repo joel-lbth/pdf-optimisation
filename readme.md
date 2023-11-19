@@ -10,7 +10,7 @@
 2. Compress ([ghostscript](https://scoop.sh/#/apps?q=ghostscript&id=b7c42fc707108f38755f0d1296307889a602edcf))
 3. Ocr ([ocrmypdf](https://ocrmypdf.readthedocs.io/en/latest/) requires [conda](https://scoop.sh/#/apps?q=anaconda&id=39e2245fc94826061b94becb2290e1e8a186f196) and [tesseract](https://scoop.sh/#/apps?q=tesseract&id=689900d11e96be93908d2234b27e6e7a1f23baf6))
 
-# 1
+# split
 > remove the decision notice (first three pages) of the pdf, to just leave the S106 legal agreement (split PDF).
 
 
@@ -19,7 +19,7 @@
 !pdftk "data/raw/PA_99_00121 - DN and S106 agreement.pdf" cat 3-end output "data/interim/split.pdf"
 ```
 
-# 2
+# compress
 > reduce the file size to under 5MB so that it will fit into our document management system on Exacom (compress PDF). 
 
 
@@ -51,7 +51,7 @@
     Page 15
     
 
-# 3
+# ocr
 > OCR the PDF so that we can copy the text from the document into our system (legal clause text).
 
 
@@ -69,9 +69,9 @@
         4 skipping all processing on this page
         5 skipping all processing on this page
         6 skipping all processing on this page
+        7 skipping all processing on this page
         8 skipping all processing on this page
         9 skipping all processing on this page
-        7 skipping all processing on this page
        10 skipping all processing on this page
        11 skipping all processing on this page
        12 skipping all processing on this page
@@ -100,5 +100,5 @@
     total 17M
     -rw-r--r-- 1 Joseph.Leach 1049089 17M Nov 16 13:57 PA_99_00121 - DN and S106 agreement.pdf
     total 1.2M
-    -rw-r--r-- 1 Joseph.Leach 1049089 1.2M Nov 19 13:09 PA_99_00121 - DN and S106 agreement.pdf
+    -rw-r--r-- 1 Joseph.Leach 1049089 1.2M Nov 19 13:12 PA_99_00121 - DN and S106 agreement.pdf
     
